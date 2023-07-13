@@ -1,0 +1,112 @@
+@import './mixins';
+
+.topNavBar{
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    background: var(---navBackground);
+    padding: 5px;
+    &-link{
+        display: block;
+        width:fit-content;
+        text-decoration: none;
+        color: var(---text-link);
+        padding: 0 7px;
+    }
+    &-link:hover{
+        color: var(---text-link-highlight)
+    }
+}
+
+.mainHeader{
+    position: relative;
+    text-align: center;
+    margin: 1rem 3rem;
+    margin-top: 3rem;
+    height: 50vh;
+    border-bottom: 2px ridge var(---text-link);
+    border-radius: 20px;
+    @include bgImage;
+    div{
+        padding: 1.5rem 3rem;
+
+    }
+    div>p{
+        margin: 1rem 4rem;
+        background-color: rgba(0,0,0,0.5);
+        border-radius: 10px;
+        padding: 1rem;
+    }
+}
+
+.mainContent{
+    margin: 0.5rem 3rem;
+    padding: 1rem;
+    text-align: center;
+    @include fullBorder;
+    @include bgImage;
+    &-div{
+        display: flex;
+        &-leftside{
+            width: 45%;
+            text-align: left;
+            p{
+                margin: 1rem 0;
+                margin-left: 1rem;
+            }
+        }
+        img{
+            width: 55%;
+            margin: 1rem;
+            border-radius: 5px;
+        }
+    }
+    h3{
+        margin: 1rem;
+    }
+}
+
+.origins{
+    margin: 1rem 3rem;
+    margin-top: 3rem;
+    padding: 1rem;
+    border-bottom: 1px ridge var(---text-link);
+    @include bgImage;
+    background-image: url("../images/Stone.png");
+    border-radius: 15px;
+    &-head{
+        margin: 2rem;
+        h3{
+            text-align: center;
+        }
+        p{
+            margin: 1rem 4rem;
+        }
+    }
+}
+
+.backgroundContent{
+    @include textImgContent($imgW:30%);
+}
+
+.itemContent{
+    @include textImgContent($imgW:15%);
+}
+
+.mainContentVar{
+    margin: 1rem 3rem;
+    padding: 1rem 10%;
+    @include bgImage;
+    @include fullBorder;
+    text-align: center;
+    img{
+        width: 100%;
+        margin-top: 1rem;
+        border-radius: 10px;
+    }
+    p{
+        margin: 0.5rem 0;
+    }
+}

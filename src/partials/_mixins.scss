@@ -1,0 +1,33 @@
+@mixin bgImage{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@mixin fullBorder{
+    border: ridge 1px var(---text-link);
+    border-radius: 10px;
+}
+
+@mixin textImgContent ($imgW) {
+    margin: 1rem 3rem;
+    padding: 1rem;
+    @include bgImage;
+    @include fullBorder;
+    background-image: url('../images/Stone.png');
+    h3{
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    &-div{
+        display: flex;
+        p{
+            margin-left: 1rem;
+        }
+    }
+    &-div > img{
+        width: $imgW;
+        border-radius: 10px;
+    }
+}

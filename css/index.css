@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  ---navBackground: linear-gradient(90deg, rgba(30,30,50,0.8) 0%, rgba(0,0,0,0.8) 100%);
+  ---text-link: rgb(120,120,180);
+  ---text-link-highlight: #a0a0ca;
+  ---text: #9393c3;
+  color: var(---text);
+  font-size: 20px;
+}
+:root h2 {
+  font-size: 38px;
+}
+:root h3 {
+  font-size: 34px;
+}
+
+body {
+  background-color: black;
+}
+
+.separator {
+  margin: 1rem 33%;
+}
+.separator svg {
+  fill: var(---text-link-highlight);
+}
+
+.cardboard {
+  display: flex;
+  margin: auto;
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: var(---text-link);
+  transition: 0.4s;
+}
+.cardboard-div {
+  transition: 0.4s;
+  width: 33%;
+  margin: 3px;
+  text-align: center;
+}
+.cardboard-div img {
+  width: 100%;
+  border-radius: 10px;
+}
+.cardboard-div p {
+  margin: 0.4rem auto;
+}
+.cardboard-div:hover {
+  transform: scale(1.05);
+  color: var(---text-link-highlight);
+}
+
+.topNavBar {
+  display: flex;
+  background: var(---navBackground);
+  padding: 5px;
+}
+.topNavBar-link {
+  display: block;
+  width: 65px;
+  text-decoration: none;
+  color: var(---text-link);
+}
+.topNavBar-link:hover {
+  color: var(---text-link-highlight);
+}
+
+.mainHeader {
+  position: relative;
+  text-align: center;
+  margin: 1rem 3rem;
+  height: 50vh;
+  border-bottom: 2px ridge var(---text-link);
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.mainHeader div {
+  padding: 1.5rem 3rem;
+}
+.mainHeader div > p {
+  margin: 1rem 4rem;
+}
+
+.mainContent {
+  margin: 0.5rem 3rem;
+  text-align: center;
+  border: ridge 1px var(---text-link);
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.mainContent-div {
+  display: flex;
+}
+.mainContent-div-leftside {
+  width: 40%;
+  text-align: left;
+}
+.mainContent-div-leftside p {
+  margin: 1rem 0;
+  margin-left: 1rem;
+}
+.mainContent-div-leftside a {
+  display: block;
+  text-align: center;
+  margin: 1.5rem auto;
+  padding: 5px;
+  font-size: 1.3rem;
+  width: 150px;
+  text-decoration: none;
+  color: var(---text-link);
+  border-bottom: ridge 2px var(---text-link);
+  background: var(---navBackground);
+  border-radius: 10px;
+  transition: 0.4s;
+}
+.mainContent-div-leftside a:hover {
+  background-color: rgba(20, 20, 20, 0.7);
+  color: var(---text-link-highlight);
+  box-shadow: 1px 1px var(---text-link);
+  transform: scale(1.04);
+}
+.mainContent-div img {
+  width: 60%;
+  margin: 1rem;
+  border-radius: 5px;
+}
+.mainContent h3 {
+  margin: 1rem;
+}
+
+.origins {
+  margin: 1rem 3rem;
+  border-bottom: 1px ridge var(---text-link);
+}
+.origins h3 {
+  text-align: center;
+  margin: 0.5rem auto;
+}
