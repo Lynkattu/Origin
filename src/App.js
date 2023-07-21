@@ -51,7 +51,6 @@ function App() {
           <Route path="/World/Levausar" element={<Levausar />} />
           <Route path="/World/Pletver" element={<Pletver />} />
           <Route path="/World/Rhaenus" element={<Rhaenus />} />
-
         </Routes>
       </BrowserRouter>
     </div>

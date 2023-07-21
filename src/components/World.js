@@ -1,11 +1,11 @@
 import React from 'react'
 import Cardboard from './Cardboard';
 
-import AlQasehran from '../images/Al-Qasehran-Desert.png';
-import Andiheimr from '../images/Andiheimr-North-Village.png';
+import AlQasehran from '../images/Al-Qasehran-Mountain-Carving.png';
+import Andiheimr from '../images/FrozenManor.png';
 import Charmire from '../images/Charmire-Cliff.png';
 import Levausar from '../images/Levausar-Statue.png';
-import Pletver from '../images/Pletver-City.png';
+import Pletver from '../images/Pletver-University.png';
 import Rhaenus from '../images/Rhenus-City-Square.png';
 
 function World() {
